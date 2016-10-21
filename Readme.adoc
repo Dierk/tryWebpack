@@ -1,0 +1,36 @@
+Prerequisites:
+-------------
+
+- git
+- node
+- npm
+- webpack
+
+Layout:
+-------
+
+    src      -- html and js sources
+    lib      -- shared js libs
+    dist     -- distribution target directory
+
+All-in-one starter (mac):
+-------
+
+    npm start
+
+
+Purpose:
+--------
+
+Have fun trying out various ways of using webpack
+
+Via CLI
+
+    cd src
+    webpack today.js clock.js ../dist/bundle.js
+
+Via config file
+
+    webpack
+
+Open file `src/single.html` to validate the results.
