@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -52,9 +52,7 @@
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var now = __webpack_require__(2);
+	const now = __webpack_require__(2);
 
 	document.getElementById("today").innerHTML = "Today is " + now().split(",")[0];
 
@@ -62,24 +60,24 @@
 /* 2 */
 /***/ function(module, exports) {
 
-	'use strict';
+	
 
 	module.exports = function now() {
-	    // now = function now() {
-	    return new Date().toLocaleString('de-CH', { hour12: false });
-	};
+	// now = function now() {
+	    return new Date().toLocaleString('de-CH', {hour12: false});
+	}
+
 
 /***/ },
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	const now = __webpack_require__(2);
 
-	var now = __webpack_require__(2);
-
-	setInterval(function () {
+	setInterval( function() {
 	    document.getElementById("clock").innerHTML = "Current time is " + now().split(",")[1];
 	}, 1000);
+
 
 /***/ }
 /******/ ]);
